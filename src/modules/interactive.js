@@ -5,6 +5,7 @@ const noCompleted = () => {
   printDynamic(comptdTaskList);
   localStorage.clear();
   localStorage.setItem('tasks', JSON.stringify(comptdTaskList));
+  
   // Code below for future improvements and Testing purposes only
   // console.log(comptdTaskList);
 };

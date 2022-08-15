@@ -45,6 +45,7 @@ const printDynamic = (input) => {
       e.preventDefault();
       items.listInfo = e.target.value;
       localStorage.setItem('tasks', JSON.stringify(eachList));
+      
       // For future imporvements and testing only console.log(items.listInfo);
     });
 
