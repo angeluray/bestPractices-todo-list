@@ -15,9 +15,7 @@ container.appendChild(input);
 container.appendChild(list);
 list.insertAdjacentHTML('afterend', '<button type="button" id="clearAllBtn">Clear all completed</button>');
 
-
 document.querySelector('.myRefresher').addEventListener('click', () => {
-// For future improvements and testing only console.table(eachList);
 });
 
 input.innerHTML = `
@@ -36,9 +34,6 @@ const addNewList = () => {
 
   // Push into the array
   eachList.push(eachItemList);
-
-
-  // This code is for testing only console.log(eachList);
 
   // print in the HTML file.
   // eslint-disable-next-line

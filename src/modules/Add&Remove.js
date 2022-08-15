@@ -10,6 +10,7 @@ class NewItemList {
 }
 
 const deelete = (input) => {
+  
   // Delete the number by index position
   eachList.splice(input, 1);
   if (eachList === []) {
@@ -45,8 +46,6 @@ const printDynamic = (input) => {
       e.preventDefault();
       items.listInfo = e.target.value;
       localStorage.setItem('tasks', JSON.stringify(eachList));
-      
-      // For future imporvements and testing only console.log(items.listInfo);
     });
 
     document.querySelector(`#task-${index} input[type="checkbox"]`).addEventListener('input', (e) => {
